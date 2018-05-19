@@ -5,7 +5,9 @@
 @media (min-width: 576px) {
 	.container { max-width: 540px; }
 }
-
+@media all and (min-width: 300px) and (max-width: 415px) {
+	#top-account { display: none; }
+}
 @media (min-width: 768px) {
 	.container { max-width: 750px; }
 }
@@ -6490,7 +6492,21 @@ body:not(.device-sm):not(.device-xs) .countdown.countdown-large.coming-soon .cou
 	border: none;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
-
+#top-account .btn-outline-secondary {
+	border-width: 2px;
+}
+#top-account .btn-outline-secondary:hover {
+	color: #FFF !important;
+}
+.feature-box .btn-outline-info {
+	color: #1ABC9C;
+	border-color: #1ABC9C;
+	border-width: 2px;
+}
+.feature-box .btn-outline-info:hover {
+	color: #fff;
+	background: #1ABC9C;
+}
 body:not(.device-touch) .button {
 	-webkit-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
@@ -6506,12 +6522,12 @@ body:not(.device-touch) .button {
 }
 
 .button:hover {
-	background-color: #444;
+	background-color: #07afaa;
 	color: #FFF;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
-.button.button-dark:hover { background-color: #1ABC9C; }
+.button.button-dark:hover { background-color: #07afaa; }
 
 .button.button-mini {
 	padding: 0 14px;
@@ -10818,7 +10834,7 @@ body:not(.device-touch) .text-overlay {
 	color: #555555;
 	background-color: #ffffff;
 	background-image: none;
-	border: 2px solid #DDD;
+	border: 2px solid #07afaa;
 	border-radius: 0 !important;
 	-webkit-transition: border-color ease-in-out .15s;
 	-o-transition: border-color ease-in-out .15s;
@@ -10865,7 +10881,7 @@ label {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #555;
+	color: #fff;
 	margin-bottom: 10px;
 	cursor: pointer;
 }
@@ -11774,7 +11790,10 @@ button.toast-close-button {
 		padding: 15px 20px;
 		width: 25em;
 	}
-	#logo img { height: 80px !important; padding-top: 10px; }
+	#logo img { 
+	    height: 60px !important;
+    	margin-top: 20px;
+	}
 }
 
 
@@ -13529,4 +13548,9 @@ body:not(.no-transition) #wrapper,
 	text-shadow: none !important;
 }
 
-
+#footer input {
+	margin-bottom: 8px;
+}
+#footer textarea {
+	margin-bottom: 10px;
+}
